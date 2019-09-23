@@ -38,8 +38,8 @@ Go to the location where you downloaded the files from this repository
 
 ### Deploy Spark Operator Kubernetes packages
 
-*<Location of heml>\helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incubator*  
-*<Location of heml>\helm install incubator/sparkoperator --generate-name --namespace spark-operator --set sparkJobNamespace=default*  
+*Location of heml\helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incubator*  
+*Location of heml\helm install incubator/sparkoperator --generate-name --namespace spark-operator --set sparkJobNamespace=default*  
 
 ### Optional
 *kubectl create clusterrolebinding add-on-cluster-admin --clusterrole=cluster-admin --serviceaccount=kube-system:default*
