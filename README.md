@@ -2,7 +2,7 @@
 MLOps NYC 2019 training session: Runnign Spark on Kubernetes
 
 ## Pre Requisities
-* Docker desktop with Kubernetes enabled
+* Docker desktop with Kubernetes enabled  
 To run the demo configure Docker with 3 cpus and 4GB of ram 
 
 ### Download all the artifacts from this repository
@@ -24,11 +24,11 @@ You can stop it after running helm
 *kubectl proxy*
 
 ### Install helm
-For this setup download the Windows or Mac binary. 
-Extract and expand somewhere local.
-Documentation:  https://helm.sh/docs/
-ALL binaries:   https://github.com/helm/helm/releases
-Windows Binary: https://get.helm.sh/helm-v3.0.0-beta.3-windows-amd64.zip
+For this setup download the Windows or Mac binary.   
+Extract and expand somewhere local.  
+Documentation:  https://helm.sh/docs/  
+ALL binaries:   https://github.com/helm/helm/releases  
+Windows Binary: https://get.helm.sh/helm-v3.0.0-beta.3-windows-amd64.zip  
 
 
 ### Create namespace (File provided)
@@ -38,8 +38,8 @@ Go to the location where you downloaded the files from this repository
 
 ### Deploy Spark Operator Kubernetes packages
 
-*<Location of heml>\helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incubator
-<Location of heml>\helm install incubator/sparkoperator --generate-name --namespace spark-operator --set sparkJobNamespace=default*
+*<Location of heml>\helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incubator*  
+*<Location of heml>\helm install incubator/sparkoperator --generate-name --namespace spark-operator --set sparkJobNamespace=default*  
 
 ### Optional
 *kubectl create clusterrolebinding add-on-cluster-admin --clusterrole=cluster-admin --serviceaccount=kube-system:default*
@@ -77,4 +77,6 @@ Watch the job execution
 *kubectl logs spark-pi-driver -f*
 
 Delete the application
+
 *kubectl delete -f spark-pi.yaml*
+
