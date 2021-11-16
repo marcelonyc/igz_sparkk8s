@@ -1,7 +1,6 @@
 # Running Spark on Kubernetes
-MLOps NYC 2019 training session: Runnign Spark on Kubernetes. This setup will be discussed at the MLOps NY conference on September 24th 2019. http://mlopsnnyc.com
+For more practical resources about how to modernize your data science ecosystem, with guests from Microsoft, NVIDIA, AWS and more, check out our webinar series MLOps Live: www.iguazio.com/mlops-live-webinar-series/
 
-## Pre Requisities
 * Docker desktop with Kubernetes enabled  
 To run the demo configure Docker with 3 cpus and 4GB of ram 
 
